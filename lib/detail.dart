@@ -34,12 +34,12 @@ class _itemsdateilsState extends State<itemsdateils> {
       endDrawer: Drawer(
         backgroundColor: Colors.black,
         child: Container(
-          padding: EdgeInsets.all(15),
+          padding: const EdgeInsets.all(15),
           child: ListView(
             children: [
               Row(
                 children: [
-                  Container(
+                  SizedBox(
                     width: 60,
                     height: 60,
                     child: ClipRRect(
@@ -73,11 +73,11 @@ class _itemsdateilsState extends State<itemsdateils> {
                   "home",
                   style: TextStyle(color: Colors.white),
                 ),
-                leading: Icon(Icons.home),
+                leading: const Icon(Icons.home),
                 iconColor: Colors.white,
                 onTap: () {
-                  Navigator.of(context).push(
-                      MaterialPageRoute(builder: (context) => Homepage()));
+                  Navigator.of(context).push(MaterialPageRoute(
+                      builder: (context) => const Homepage()));
                 },
               ),
               ListTile(

@@ -99,22 +99,22 @@ class _HomepageState extends State<Homepage> {
               "Categories",
               style: TextStyle(fontWeight: FontWeight.bold, fontSize: 22),
             ),
-            Container(
+            SizedBox(
               height: 100,
               child: ListView.builder(
                 itemCount: categories.length,
                 scrollDirection: Axis.horizontal,
                 itemBuilder: (context, i) {
                   return Container(
-                    margin: EdgeInsets.only(right: 22),
+                    margin: const EdgeInsets.only(right: 22),
                     child: Column(
                       children: [
                         Container(
                           decoration: BoxDecoration(
                               color: Colors.grey[200],
                               borderRadius: BorderRadius.circular(50)),
+                          padding: const EdgeInsets.all(15),
                           child: Icon(categories[i]["iconname"], size: 40),
-                          padding: EdgeInsets.all(15),
                         ),
                         Container(
                             child: Text(
@@ -155,7 +155,7 @@ class _HomepageState extends State<Homepage> {
                       child: Column(
                         children: [
                           Container(
-                            padding: EdgeInsets.all(10),
+                            padding: const EdgeInsets.all(10),
                             width: 200,
                             color: Colors.grey[400],
                             child: Image.asset(
